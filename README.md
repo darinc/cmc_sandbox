@@ -3,8 +3,8 @@
 Just a place to share some CMC related scripts / calculations, etc.
 
 ## Requirements
-[Nodejs](https://nodejs.org)
-[Yarn](https://yarnpkg.com/)
+- [Nodejs](https://nodejs.org)
+- [Yarn](https://yarnpkg.com/)
 
 ## Installing Yarn and NodeJS
 https://yarnpkg.com/en/docs/install#linux-tab
@@ -55,9 +55,9 @@ and adds the following additional metrics:
     micro_flippening_price: 183.4354696395517
 ```
 
-micro_count is how many coins you would need to buy in order to have one one-millionth of the available coin supply
-micro_cost is how much that would cost you
-micro_cap_if_matched_raw is the market cap this coin would have if it suddenly matched BTC's price
-micro_cap_if_match_btc_price is a human readable format - Trillion, Billion, Million, or k (thousand)
-micro_cap_if_matched_how_much_bigger is how much bigger this coin would be than bitcoin if one coin suddenly matched BTC's price
-micro_flippening_price is how much one coin would have to be for this coin to be equal to BTC's market cap
+- micro_count is how many coins you would need to buy in order to have one one-millionth of the available coin supply
+- micro_cost is how much that would cost you
+- micro_cap_if_matched_raw is the market cap this coin would have if it suddenly matched BTC's price
+- micro_cap_if_match_btc_price is a human readable format - Trillion, Billion, Million, or k (thousand)
+- micro_cap_if_matched_how_much_bigger is how much bigger this coin would be than bitcoin if one coin suddenly matched BTC's price
+- micro_flippening_price is how much one coin would have to be for this coin to be equal to BTC's market cap
