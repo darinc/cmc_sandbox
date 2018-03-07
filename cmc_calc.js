@@ -40,15 +40,15 @@ const getcmcdata = async function () {
       c.micro_cost = c.micro_count*c.price_usd; 
 
       // the market cap this coin would have if it suddenly matched BTC's price
-      c.cap_if_matched_btc_raw = c.market_cap_usd * BTC.price_usd/c.price_usd;
+      c.cap_if_match_btc_raw = c.market_cap_usd * BTC.price_usd/c.price_usd;
 
       // human readable format - Trillion, Billion, Million, or k (thousand)
       c.cap_if_match_btc_nice = formatAbbreviation(c.market_cap_usd * BTC.price_usd/c.price_usd);
 
       // how much bigger this coin would be than bitcoin if one coin suddenly matched BTC's price
-      c.cap_if_matched_btc_multiplier = (parseFloat(c.micro_cap_if_matched_raw) / parseFloat(BTC.market_cap_usd)).toFixed(2) + 'x';
+      c.cap_if_match_btc_multiplier = (parseFloat(c.cap_if_match_btc_raw) / parseFloat(BTC.market_cap_usd)).toFixed(2) + 'x';
 
-      // 
+      // how much one coin would have to be for this coin to be equal to BTC's market cap
       c.flippening_price = BTC.price_usd * BTC.available_supply/c.available_supply;
     }
 
