@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "wreck": "^14.0.2"
+  }
+}
